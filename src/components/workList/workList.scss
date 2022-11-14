@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+.portfolioList {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem 0.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  @include mobile {
+    font-size: 1.2rem;
+    margin: 1rem 1rem;
+    padding: 0.1rem 0.7rem;
+  }
+
+  &:hover {
+    background-color: rgb(39, 108, 235);
+    color: white;
+  }
+
+  &.active {
+    background-color: rgb(39, 108, 235);
+    color: white;
+  }
+}

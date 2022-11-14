@@ -1,0 +1,144 @@
+@import '../../global.scss';
+.slider-container1{
+    background-color: white;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+
+    .servicetitle12{
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.2rem;
+    }
+
+    .icon12{
+        font-size: 4rem;
+        font-weight: bold;
+        position: absolute;
+        cursor: pointer;
+        top: 45%;
+
+        &.left1234{
+            left: 5px;
+            @include mobile{
+                left: 70px
+            }
+        }
+
+        &.right1234{
+            right: 5px;
+            @include mobile{
+                right: 70px;
+            }
+        }
+    }
+
+
+    .slider123{
+        height: 90%;
+        width: 100vw;
+        background-color: white;
+        transition: all 1s ease-in;
+
+        .containerxyzp{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .itemamrit{
+                width: 70%;
+                height: 26rem;
+                @include mobile {
+                    height: 30rem;
+                }
+                border-radius: 20px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .leftamrit{
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgb(240, 240, 238);
+                    color: rgb(39, 108, 235);
+                    @include mobile {
+                        flex: 0.5;
+                    }
+
+                    .leftContaineramrit{
+                        width: 100%;
+                        height: 100%;
+                        padding: 0 0.5rem;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        .imgContaineramrit{
+                            width: 50%;
+                            @include mobile{
+                                width: 80%;
+                            }
+                            margin-left: auto;
+                            margin-right: auto;
+                            
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        h2{
+                            font-size: 2rem;
+                            font-weight: 500;
+                        }
+                        .descriptionsectionamrit{
+                            font-size: 1rem;
+                            font-weight: 300;
+                            padding: 0.2rem 0.3rem;
+                        }
+                        span{
+                            text-decoration: none;
+                            color: rgb(39, 108, 235);
+                            cursor: pointer;
+
+                            &:hover{
+                                padding: 0 0.5rem;
+                                border-radius: 5px;
+                                background-color: rgb(39, 108, 235);
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                .rightamrit{
+                    flex: 0.5;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                    @include mobile {
+                        display: flex;
+                    }
+                    align-items: center;
+                    justify-content: center;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .inactivedre {
+            display: none;
+        }
+        
+    }
+}

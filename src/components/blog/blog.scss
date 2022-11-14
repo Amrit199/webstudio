@@ -1,0 +1,78 @@
+@import '../../global.scss';
+.blog-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(39, 108, 235);
+  color: white;
+
+  .blog-title {
+    flex: 0.1;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .body-container {
+    flex: 0.9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include mobile{
+        width: 90%;
+    }
+
+    .item-container {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0.5rem 0.5rem;
+      cursor: pointer;
+
+
+      .img-container {
+        width: 100%;
+        position: relative;
+        transition: all 1s ease-in;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
+        .details {
+          display: none;
+
+          @include mobile{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: absolute;
+            bottom: 0.5rem;
+            opacity: 0;
+          }
+        }
+
+        &:hover {
+          img {
+            opacity: 0.3;
+          }
+          .details {
+            opacity: 1;
+          }
+        }
+      }
+
+      .description {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

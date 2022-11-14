@@ -1,0 +1,66 @@
+@import "../../global.scss";
+
+.whyus {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: white;
+    color: rgb(39, 108, 235);
+
+    .whyus-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .item-container {
+      width: 100%;
+      height: 80%;
+      margin: 1rem 0;
+      .whyus-item-box {
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .whyus-item {
+          display: flex;
+          flex: 1;
+          text-align: start;
+          .whyus-figure {
+            flex: 0.3;
+            height: 7rem;
+            overflow: hidden;
+            margin-right: 0.5rem;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .whyus-content {
+            flex: 0.7;
+            .whyus-title {
+              font-size: 1rem;
+            }
+            .whyus-text {
+              font-size: 0.8rem;
+              display: none;
+              @include mobile {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
